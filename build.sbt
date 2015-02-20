@@ -12,3 +12,9 @@ libraryDependencies ++= Seq(
   cache,
   javaWs
 )
+
+libraryDependencies ++= Seq(
+  "org.aksw.jena-sparql-api" % "jena-sparql-api-core" % "2.10.0-22"
+)
+
+resolvers += "Local Maven Repository" at "file://"+Path.userHome.absolutePath+"/.m2/repository"
